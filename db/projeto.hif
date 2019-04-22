@@ -19,5 +19,25 @@ VHSM_ON
 -- End Library Paths --
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
+# entity
+AmaiorB
+# storage
+db|projeto.(0).cnf
+db|projeto.(0).cnf
+# case_insensitive
+# source_file
+amaiorb.bdf
+4db640274a54f4f3a5af1dee5e86b35f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
 # complete
 
