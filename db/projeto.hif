@@ -27,7 +27,64 @@ db|projeto.(0).cnf
 # case_insensitive
 # source_file
 amaiorb.bdf
-4db640274a54f4f3a5af1dee5e86b35f
+59654e8614a3439fc69796f6ca7e14
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Somador4Bits
+# storage
+db|projeto.(1).cnf
+db|projeto.(1).cnf
+# case_insensitive
+# source_file
+somador4bits.bdf
+648312fa58e4cb464bd93425287a60
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Somador
+# storage
+db|projeto.(2).cnf
+db|projeto.(2).cnf
+# case_insensitive
+# source_file
+somador.bdf
+3fb23e34ff851d3e18a3c306e79b7b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somador:inst10
+Somador:inst9
+Somador:inst8
+Somador:inst
+}
+# macro_sequence
+
+# end
+# entity
+Comp2
+# storage
+db|projeto.(3).cnf
+db|projeto.(3).cnf
+# case_insensitive
+# source_file
+comp2.bdf
+7a7e985663f5c33aa5feb99bac99dc3d
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

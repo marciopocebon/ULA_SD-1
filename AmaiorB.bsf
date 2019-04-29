@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 112 112)
+	(rect 64 64 160 160)
 	(text "AmaiorB" (rect 5 0 53 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
@@ -36,13 +36,6 @@ applicable agreement for further details.
 		(text "B" (rect 0 0 8 14)(font "Arial" (font_size 8)))
 		(text "B" (rect 21 43 29 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "C" (rect 0 0 8 14)(font "Arial" (font_size 8)))
-		(text "C" (rect 21 59 29 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
 		(pt 96 32)
