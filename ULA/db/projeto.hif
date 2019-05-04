@@ -1,0 +1,394 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+7
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Somador4Bits
+# storage
+db|projeto.(1).cnf
+db|projeto.(1).cnf
+# case_insensitive
+# source_file
+somador4bits.bdf
+648312fa58e4cb464bd93425287a60
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somador4Bits:inst
+}
+# macro_sequence
+
+# end
+# entity
+Comp2
+# storage
+db|projeto.(3).cnf
+db|projeto.(3).cnf
+# case_insensitive
+# source_file
+comp2.bdf
+7a7e985663f5c33aa5feb99bac99dc3d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Comp2:inst10
+}
+# macro_sequence
+
+# end
+# entity
+ULA
+# storage
+db|projeto.(0).cnf
+db|projeto.(0).cnf
+# case_insensitive
+# source_file
+ula.bdf
+9023c5c8af16a5e07ac441148ed68a58
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+MUXCOMP2
+# storage
+db|projeto.(4).cnf
+db|projeto.(4).cnf
+# case_insensitive
+# source_file
+muxcomp2.bdf
+2019eaf6e988262c31b78e2dc7cabb7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUXCOMP2:inst4
+}
+# macro_sequence
+
+# end
+# entity
+MUXCOMP
+# storage
+db|projeto.(5).cnf
+db|projeto.(5).cnf
+# case_insensitive
+# source_file
+muxcomp.bdf
+457ecd402a16e1615913a689e5fcb23
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUXCOMP2:inst4|MUXCOMP:inst
+}
+# macro_sequence
+
+# end
+# entity
+AmaiorB4Bits
+# storage
+db|projeto.(6).cnf
+db|projeto.(6).cnf
+# case_insensitive
+# source_file
+amaiorb4bits.bdf
+30c99ca8bdf2e2ab373ea7907ddcb6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+AmaiorB4Bits:inst16
+}
+# macro_sequence
+
+# end
+# entity
+AmaiorB
+# storage
+db|projeto.(7).cnf
+db|projeto.(7).cnf
+# case_insensitive
+# source_file
+amaiorb.bdf
+4db640274a54f4f3a5af1dee5e86b35f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+AmaiorB4Bits:inst16|AmaiorB:inst2
+AmaiorB4Bits:inst16|AmaiorB:inst3
+AmaiorB4Bits:inst16|AmaiorB:inst1
+AmaiorB4Bits:inst16|AmaiorB:inst
+AmaiorBNOT4Bits:inst17|AmaiorB:inst2
+AmaiorBNOT4Bits:inst17|AmaiorB:inst3
+AmaiorBNOT4Bits:inst17|AmaiorB:inst1
+AmaiorBNOT4Bits:inst17|AmaiorB:inst
+}
+# macro_sequence
+
+# end
+# entity
+AmaiorBNOT4Bits
+# storage
+db|projeto.(8).cnf
+db|projeto.(8).cnf
+# case_insensitive
+# source_file
+amaiorbnot4bits.bdf
+c2b17fc72918d5dbdf9b57e17a6abf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+AmaiorBNOT4Bits:inst17
+}
+# macro_sequence
+
+# end
+# entity
+Igual
+# storage
+db|projeto.(9).cnf
+db|projeto.(9).cnf
+# case_insensitive
+# source_file
+igual.bdf
+dc36874b514e3e2b5d595eec6eed5f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Igual:inst8
+}
+# macro_sequence
+
+# end
+# entity
+MUXOVERFLOW2
+# storage
+db|projeto.(10).cnf
+db|projeto.(10).cnf
+# case_insensitive
+# source_file
+muxoverflow2.bdf
+b0c081c1ceb72d622b105d2fa0559b77
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUXOVERFLOW2:inst6
+}
+# macro_sequence
+
+# end
+# entity
+MUXOVERFLOW
+# storage
+db|projeto.(11).cnf
+db|projeto.(11).cnf
+# case_insensitive
+# source_file
+muxoverflow.bdf
+eea3d4b3d35c1a2ff0c4d66afab2e8c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUXOVERFLOW2:inst6|MUXOVERFLOW:inst
+}
+# macro_sequence
+
+# end
+# entity
+Somador
+# storage
+db|projeto.(12).cnf
+db|projeto.(12).cnf
+# case_insensitive
+# source_file
+somador.bdf
+7fc4d6b9573b5c3333cfb2a2599b648
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Somador4Bits:inst|Somador:inst10
+Somador4Bits:inst|Somador:inst9
+Somador4Bits:inst|Somador:inst8
+Somador4Bits:inst|Somador:inst
+Comp2:inst10|Somador:inst10
+Comp2:inst10|Somador:inst9
+Comp2:inst10|Somador:inst8
+Comp2:inst10|Somador:inst
+}
+# macro_sequence
+
+# end
+# entity
+AandB
+# storage
+db|projeto.(13).cnf
+db|projeto.(13).cnf
+# case_insensitive
+# source_file
+aandb.bdf
+5c40c59b6c749d503fbc5b23f238553
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+AandB:inst1
+}
+# macro_sequence
+
+# end
+# entity
+AxorB
+# storage
+db|projeto.(14).cnf
+db|projeto.(14).cnf
+# case_insensitive
+# source_file
+axorb.bdf
+da7444525ef521d8f71af59eb2d756c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+AxorB:inst2
+}
+# macro_sequence
+
+# end
+# entity
+MUX2
+# storage
+db|projeto.(15).cnf
+db|projeto.(15).cnf
+# case_insensitive
+# source_file
+mux2.bdf
+3ed27bf457276a8bb5a7115e9d5931c4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUX2:inst7
+}
+# macro_sequence
+
+# end
+# entity
+MUX
+# storage
+db|projeto.(16).cnf
+db|projeto.(16).cnf
+# case_insensitive
+# source_file
+mux.bdf
+bf97e0e844eeb37f989b5041319c34f3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MUX2:inst7|MUX:inst8
+MUX2:inst7|MUX:inst9
+MUX2:inst7|MUX:inst10
+MUX2:inst7|MUX:inst11
+}
+# macro_sequence
+
+# end
+# entity
+DISPLAY
+# storage
+db|projeto.(17).cnf
+db|projeto.(17).cnf
+# case_insensitive
+# source_file
+display.bdf
+f7e9846f5654b3ba4ef58472ca793b8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+MUXFINAL
+# storage
+db|projeto.(2).cnf
+db|projeto.(2).cnf
+# case_insensitive
+# source_file
+muxfinal.bdf
+c84a1aa4699b936fb165b7f7c78aa37
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
