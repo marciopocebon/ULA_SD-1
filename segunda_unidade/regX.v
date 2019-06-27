@@ -1,20 +1,23 @@
-module regX(in, out, fun);
+module regX(barramento, Tx, a, clock)
 
-    input wire [1:0] in;
-    input wire [3:0] fun;
-    output reg [1:0] out;
+    input wire [3:0] barramento;
+    input wire [1:0] Tx;
+    input wire clock;
 
-    parameter ZERO = 3'b0;
-    parameter HOLD = 3'b0;
-    parameter RESET = 3'b1;
-    parameter PASS = 3'b2;
+    output reg [3:0] a;
 
-    always @(fun or in)
+     parameter
+        CLEAR = 3'd0;
+        LOAD = 3'd1;
+        HOLD = 3'd2;
+    
+    always @(posedge clock)
     begin
-        case(fun)
-            HOLD : out = out;  
-            RESET : out = ZERO;
-            PASS : out = in;
+        case(Tx)
+            CLEAR: a <= 3'd0;
+            LOAD: a <= barramento;
+            HOLD: a <= a;
         endcase
     end
+
 endmodule

@@ -1,9 +1,9 @@
-module regY(saidaULA,acumulador,clock,controle)
+module regY(saidaULA,b,clock,Ty)
     input wire [3:0] saidaULA;
-    input wire [1:0] controle;
+    input wire [1:0] Ty;
     input wire clock;
 
-    output reg [3:0] acumulador;
+    output reg [3:0] b;
 
     parameter
         CLEAR = 3'd0;
@@ -13,11 +13,11 @@ module regY(saidaULA,acumulador,clock,controle)
 
     always @(posedge clock)
     begin
-        case(controle)
-            CLEAR: acumulador <= 3'd0;
-            LOAD: acumulador <= saidaULA;
-            HOLD: acumulador <= acumulador;
-            DIV: acumulador <= saidaULA << 1;
+        case(Ty)
+            CLEAR: b <= 3'd0;
+            LOAD: b <= saidaULA;
+            HOLD: b <= b;
+            DIV: b <= saidaULA << 1;
         endcase
     end
 endmodule
